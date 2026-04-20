@@ -2,10 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F7FA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lập trình Android - Lớp 65.CNTT-2\nGiảng viên: Mai Cường Thọ"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="#7F8C8D"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DANH MỤC BÀI HÁT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
 
     <ListView
         android:id="@+id/lvBaiHat"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:divider="#E5E7E9"
+        android:dividerHeight="1dp"
+        android:background="#FFFFFF"
+        android:elevation="3dp"
+        android:padding="10dp"/>
+
 </LinearLayout>

@@ -1,39 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="24dp"
+    android:background="#F5F7FA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lập trình Android - Lớp 65.CNTT-2\nGiảng viên: Mai Cường Thọ"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="#7F8C8D"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐỔI NGOẠI TỆ"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
 
     <EditText
         android:id="@+id/edtTien"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:hint="Nhập số tiền (VNĐ)"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal"
+        android:padding="15dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_marginBottom="15dp"/>
 
     <EditText
         android:id="@+id/edtTyGia"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nhập tỉ giá đô la"
+        android:layout_height="60dp"
+        android:hint="Nhập tỉ giá (Ví dụ: 25400)"
         android:inputType="numberDecimal"
-        android:layout_marginTop="10dp"/>
+        android:padding="15dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_marginBottom="25dp"/>
 
     <Button
         android:id="@+id/btnTinh"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Chuyển sang USD"
-        android:layout_marginTop="10dp"/>
+        android:layout_height="60dp"
+        android:text="CHUYỂN SANG USD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:backgroundTint="#3498DB"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="30dp"/>
 
     <TextView
         android:id="@+id/tvKetQua"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:text="Kết quả sẽ hiển thị ở đây"/>
+        android:textColor="#E74C3C"
+        android:gravity="center"
+        android:text="0.00 USD"
+        android:padding="20dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"/>
 
 </LinearLayout>
